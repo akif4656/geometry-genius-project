@@ -64,15 +64,20 @@
                 <!-- Triangle card -->
                 <div class="card bg-base-100 w-80 shadow-xl">
                     <figure>
-                      <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                      <img src="images/parallelogram.png">
+                        
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A)=b x h</p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <div class="mr-10">
+                          <input type="text" id="para-b" class=" w-20 border-2 border-solid border-slate-500 outline-none rounded-sm text-2xl p-2" placeholder="b">
+                          <span>cm</span>
+                          <input type="text"id="para-h" class="w-20 border-2 border-solid border-slate-500 outline-none rounded-sm text-2xl p-2" placeholder="h">
+                          <span>cm</span>
+                        </div>
+                        <button class="btn btn-primary w-full" id="para-btn">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -80,7 +85,9 @@
                     <!-- area calculation container -->
             <div class=" w-80 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center">Area Calculation</h3>
-                <input type="text" id="output">
+                <div class="flex">
+                    <input type="text" id="output" class="text- ml-10">
+                </div>
             </div>
         </div>
     </main>

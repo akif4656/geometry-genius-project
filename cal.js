@@ -18,3 +18,16 @@ document.getElementById('btnn2').addEventListener('click', function() {
     input1.value = '';
     input2.value = '';
 });
+document.getElementById('para-btn').addEventListener('click',function(){
+    const paraBInput=document.getElementById('para-b');
+    const paraBText=paraBInput.value;
+    const b=parseFloat(paraBText);
+    const parahInput=document.getElementById('para-h');
+    const paraHText=parahInput.value;
+    const h=parseFloat(paraHText);
+    const result=b*h;
+    const output=document.getElementById('output');
+    output.value = `Parallelogram is: ${result}`;
+    paraBInput.value='';
+    parahInput.value='';
+})
